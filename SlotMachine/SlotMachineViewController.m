@@ -27,8 +27,8 @@
 #define CAROUSEL_HEIGHT 500
 #define BUTTON_HEIGHT 150
 #define BUTTON_WIDTH 300
-#define DEFAULT_CAROUSEL_OFFSET 20000
-#define SPIN_DURATION 5
+#define DEFAULT_CAROUSEL_OFFSET 1600
+#define SPIN_DURATION 4
 #define BORDER_WIDTH 15
 
 @interface SlotMachineViewController ()
@@ -166,9 +166,9 @@
         
         [self spinLeft];
         
-        [self performSelector:@selector(spinMiddle) withObject:nil afterDelay:[[NSNumber numberWithFloat:0.7] doubleValue]];
+        [self performSelector:@selector(spinMiddle) withObject:nil afterDelay:[[NSNumber numberWithFloat:0.6] doubleValue]];
         
-        [self performSelector:@selector(spinRight) withObject:nil afterDelay:[[NSNumber numberWithFloat:1.5] doubleValue]];
+        [self performSelector:@selector(spinRight) withObject:nil afterDelay:[[NSNumber numberWithFloat:1.2] doubleValue]];
     }
 }
 
